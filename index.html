@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blackjack</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="/assets/css/styles.css">
+</head>
+
+<body>
+
+    <header>
+
+        <h1 class="titulo">Blackjack</h1>
+
+    </header>
+
+    <div class="row mt-2">
+
+        <div class="col text-center">
+
+            <button id = "newGameBtn" class="btn btn-danger">Nuevo Juego</button>
+            <button id = "drawBtn" class="btn btn-primary">Pedir Carta</button>
+            <button id = "stopBtn" class="btn btn-primary">Detener</button>
+
+        </div>
+
+    </div>
+
+    <div class="row container">
+
+        <div class="col">
+
+            <h2 class="nombre-jugador"> - <small class="puntos-jugador">0</small></h2>
+
+            <div id="jugador-cartas">
+
+                <!-- <img class="carta" src="/assets/cartas/10C.png" alt=""> -->
+                
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="row container mt-2">
+
+        <div class="col">
+
+            <h2>Computadora / Skynet - <small class="puntos-computadora">0</small></h2>
+
+            <div id="computadora-cartas">
+
+                <!-- <img class="carta" src="/assets/cartas/10H.png" alt=""> -->
+                
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/underscore@1.13.1/underscore-umd-min.js"></script> <!--CDN for card shuffle-->
+    <script src="/assets/js/game.js"></script>
+    
+</body>
+</html>
